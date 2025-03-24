@@ -12,6 +12,6 @@ inquirer.prompt([
     const htmlContent = generateHTML(answers);
     fs.writeFile('portfolio.html', htmlContent, (err) => {
         if (err) throw err;
-        console.log('Portfolio HTML created successfully!');
+        console.log('Portfolio HTML successfully generated as portfolio.html');
     });
 });
